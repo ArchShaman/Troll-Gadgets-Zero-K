@@ -1,0 +1,57 @@
+unitDef = {
+  unitname                      = [[headquarters]],
+  name                          = [[Command Headquarters]],
+  description                   = [[Kill this to defeat the enemy team!]],
+  acceleration                  = 0,
+  activateWhenBuilt             = true,
+  brakeRate                     = 0,
+  buildAngle                    = 4096,
+  buildCostEnergy               = 10000,
+  buildCostMetal                = 10000,
+  builder                       = false,
+  buildPic						          = [[pw_hq.png]],
+  buildTime                     = 10000,
+  canSelfDestruct               = false,
+  category                      = [[FLOAT UNARMED]],
+  --corpse                      = [[DEAD]],
+
+  customParams                  = {
+    helptext       = [[Through the miracle of advanced cybernetic bullshit, the headquarters controls all units in a team.]],
+    dontcount = [[1]],
+	soundselect = "building_select1",
+  },
+
+  energyUse                     = 0,
+  explodeAs                     = [[HQDEATH]],
+  footprintX                    = 8,
+  footprintZ                    = 8,
+  levelGround                   = true,
+  iconType                      = [[mahlazer]],
+  idleAutoHeal                  = 5,
+  idleTime                      = 1800,
+  mass                          = 750,
+  maxDamage                     = 10000,
+  maxSlope                      = 18,
+  maxVelocity                   = 0,
+  minCloakDistance              = 150,
+  noAutoFire                    = false,
+  objectName                    = [[pw_hq.s3o]],
+  reclaimable                   = false,
+  script                        = [[nullscript.lua]],
+  seismicSignature              = 4,
+  selfDestructAs                = [[ATOMIC_BLAST]],
+  selfDestructCountdown         = 60,
+  side                          = [[ARM]],
+  sightDistance                 = 0,
+  waterline                     = 10,
+  turnRate                      = 0,
+  useBuildingGroundDecal        = false,
+  workerTime                    = 0,
+  --yardMap                       = [[oooooooooooooooooooo]],
+
+  featureDefs                   = {
+  },
+
+}
+
+return lowerkeys({ pw_hq = unitDef })
